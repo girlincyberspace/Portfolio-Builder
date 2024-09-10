@@ -5,13 +5,12 @@ import { useEffect } from "react";
 function App(){
 
   useEffect(() => {
-    axios.get("http://localhost:3001/users"),then((response) => {
+    axios.get("http://localhost:3001/portfolios"),then((response) => {
       console.log(response);
     })
   }, [])
   return(
     <div>
-      <NavBar />
     </div>
   )
 
