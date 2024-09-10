@@ -1,7 +1,13 @@
 const express = require('express');
 const app = express();
 
+app.use(express.json());
+
 const db = require('./models');
+
+//Routers
+const portfolioRouter = require('./routes/Portfolios');
+app.use('/portfolios', portfolioRouter);
 
 db.sequelize.sync().then(() => {
     app.listen(3001, () => {
