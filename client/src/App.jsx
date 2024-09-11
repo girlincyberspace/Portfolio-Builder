@@ -5,7 +5,7 @@ import { useEffect } from "react";
 function App(){
 
   useEffect(() => {
-    axios.get("http://localhost:3001/portfolios"),then((response) => {
+    axios.get("http://localhost:3001/portfolios").then((response) => {
       console.log(response);
     })
   }, [])
