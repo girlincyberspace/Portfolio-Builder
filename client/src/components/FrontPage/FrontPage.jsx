@@ -4,6 +4,7 @@ import portfolio from '../../assets/portfolio.jpg';
 function FrontPage() {
 
     return(
+   
         <div className='container'>
           <p className='first-text'>Create a Portfolio without limits</p>
           <p>Build and scale with a powerful portfolio builder</p>
