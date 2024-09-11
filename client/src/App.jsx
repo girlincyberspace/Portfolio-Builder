@@ -1,16 +1,17 @@
-import NavBar from "./components/Navbar";
+import NavbarBeforeSignIn from "./components/Navbar/NavbarBeforeSignIn";
+import NavbarAfterSignIn from "./components/Navbar/NavbarAfterSignIn";
+import FrontPage from "./components/FrontPage/FrontPage";
+import LoginSignup from "./components/LoginSignUp/loginSignup";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App(){
 
-  useEffect(() => {
-    axios.get("http://localhost:3001/portfolios").then((response) => {
-      console.log(response);
-    })
-  }, [])
+
   return(
-    <div>
+    <div className="container">
+      <NavbarBeforeSignIn />
+      <FrontPage />
     </div>
   )
 
