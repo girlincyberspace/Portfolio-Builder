@@ -24,7 +24,7 @@ function Signup () {
   return (
   
     <div className="flex justify-center items-center h-screen bg-blue-700">
-      <div className="bg-white p-10 rounded-md shadow-md w-96">
+      <div className="bg-white p-10 rounded-md shadow-md w-96 mt-20">
         <h2 className="text-3xl font-bold text-center mb-6">Sign Up</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
