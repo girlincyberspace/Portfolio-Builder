@@ -41,7 +41,8 @@ function MakeUpArtist() {
         showEditButton
         />
         <EditText
-        className='px-72'
+        className='px-72 w-10'
+        inline={true}
         name='textbox1'
         defaultValue="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit 
         Text” or double click me to add your own content and make changes to the font. Feel 
